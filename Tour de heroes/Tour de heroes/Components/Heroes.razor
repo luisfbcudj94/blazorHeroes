@@ -1,0 +1,42 @@
+﻿@using Tour_de_heroes.Models
+
+<div class="container-heroes">
+    @if (HeroesList == null || HeroesList.Count == 0)
+    {
+        <p>¡Cero heroes encontrados!</p>
+    }
+    else
+    {
+        <div class="container-heroes">
+            <h1>Heroes</h1>
+        </div>
+    }
+    @foreach (var hero in HeroesList)
+    {
+        <div class="card-hero">
+            <span>@hero.Nombre</span>
+            <img src="@hero.UrlFoto" />
+            <button @onclick="() => DeleteHero(hero)">Eliminar</button>
+        </div>
+    }
+</div>
+
+@code {
+
+    [Parameter]
+    public List<Hero> HeroesList { get; set;}
+
+    [Parameter]
+    public EventCallback<List<Hero>> HeroesListChanged { get; set; }
+
+    private async Task DeleteHero(Hero hero)
+    {
+        await HeroesListChanged.InvokeAsync(HeroesList.Where(h => h != hero).ToList());
+    }
+
+    protected override void OnParametersSet()
+    {
+        base.OnParametersSet();
+        Console.WriteLine($"HeroesList count: {HeroesList.Count}");
+    }
+}
