@@ -196,13 +196,13 @@
       "mscorlib.dll": "sha256-mvS0gmCEk3NPPJPuIX5UWyIRyNxQ4WYYES39CBT9CK0=",
       "netstandard.dll": "sha256-6NXprR7wyUZxpdXxaSPHSoC5uOL5UCc7bsZG3TSuVxE=",
       "System.Private.CoreLib.dll": "sha256-igtwZSR0\/lrbmwL\/XiTsEkIeSL+736GHTZPReYguZCQ=",
-      "Tour de heroes.dll": "sha256-Fbjs+guD7yfIxLoZcSsWhiu5hF9D33xDAjBII6PZOqg="
+      "Tour de heroes.dll": "sha256-AflgGCqIIi87N6RGCAkj2i2N1wkIzVoArCXq3pNeNw4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Tour de heroes.pdb": "sha256-X2PCPn7HPjQ27wehLbRxEPa7WXsv1ioaVIVXdYvoqyM="
+      "Tour de heroes.pdb": "sha256-Vfe4xHNT\/YWMiy8rwkHSIptok3NVUmvx\/fFUxggdd1I="
     },
     "runtime": {
       "dotnet.6.0.14.4dfgkhwheg.js": "sha256-54cJ6JdGhGbKaLWxHfRYzYbuyRq2wlK\/ZDzfSXD3FEs=",
