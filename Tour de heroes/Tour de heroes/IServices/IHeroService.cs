@@ -8,5 +8,7 @@ namespace Tour_de_heroes.IServices
         public List<Hero> SearchHero(string nameHero);
 
         public void addHero(Hero hero);
+
+        public void DeleteHero(Hero hero);
     }
 }

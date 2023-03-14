@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nm1eT5y/t/97CRZ6UiaupeSqjuhFAF3QzBNdAsU70Yg=",
+  "Hash": "kEpff0Xu0aTD2oI72RIoEf2dMFkmtpp8B+Vm7fVcKmE=",
   "Source": "Tour de heroes",
   "BasePath": "/",
   "Mode": "Root",
@@ -7036,6 +7036,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\alejandro.perez\\Desktop\\blazorHeroes\\Tour de heroes\\Tour de heroes\\wwwroot\\css\\styles-custom.css",
+      "SourceId": "Tour de heroes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\alejandro.perez\\Desktop\\blazorHeroes\\Tour de heroes\\Tour de heroes\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/styles-custom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\styles-custom.css"
     },
     {
       "Identity": "C:\\Users\\alejandro.perez\\Desktop\\blazorHeroes\\Tour de heroes\\Tour de heroes\\wwwroot\\favicon.ico",

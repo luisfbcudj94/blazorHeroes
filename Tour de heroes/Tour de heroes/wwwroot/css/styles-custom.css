@@ -1,0 +1,45 @@
+﻿body {
+}
+
+.container-smart {
+    display: grid;
+    grid-template-columns: 70% 30%
+}
+
+.container-heroes {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 60px;
+    grid-row-gap: 30px;
+}
+
+.container-heroes .card-hero {
+    width: 200px;
+}
+
+.container-heroes .card-hero img{
+    width: 100%;
+}
+
+
+.container-smart .form-heroes form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+.container-search{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    align-items: center;
+}
+
+.container-search input{
+    width:80%;
+}
+
+.container-search button {
+    width: 80%;
+}
+
+ 

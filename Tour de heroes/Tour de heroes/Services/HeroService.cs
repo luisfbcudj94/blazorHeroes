@@ -19,7 +19,11 @@ namespace Tour_de_heroes.Services
         public void addHero(Hero hero)
         {
             Heroes.Add(hero);
-            Console.WriteLine($"DESDE EL SERVICIO ADDHERO: {Heroes}");
+        }
+
+        public void DeleteHero(Hero hero)
+        {
+            Heroes.Remove(hero);
         }
     }
 }

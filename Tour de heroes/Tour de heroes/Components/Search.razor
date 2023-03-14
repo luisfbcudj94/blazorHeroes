@@ -2,9 +2,13 @@
 @using Tour_de_heroes.Models
 @inject IHeroService heroService;
 
-<label>Busca a tu heroe</label>
-<input @bind-value="searchText" />
-<button @onclick="SearchHero">Buscar</button>
+<div class="container-search">
+    <label>Busca a tu heroe</label>
+    <input class="form-control form-search" @bind-value="searchText" />
+    <button @onclick="SearchHero" class="btn btn-primary">Buscar</button>
+</div>
+
+
 
 
 

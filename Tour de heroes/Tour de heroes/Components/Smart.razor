@@ -1,8 +1,7 @@
-﻿@page "/smart"
+﻿@page "/"
 @using Tour_de_heroes.Models
 
 <div class="container-smart">
-    <h3>Tour de heroes</h3>
     <div class="heroes">
         <Search OnSearch="OnSearch" />
         <Heroes @bind-HeroesList="@heroesFound" />
