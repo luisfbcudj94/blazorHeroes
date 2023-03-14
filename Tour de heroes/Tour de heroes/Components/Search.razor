@@ -1,0 +1,27 @@
+﻿@using Tour_de_heroes.IServices;
+@using Tour_de_heroes.Models
+@inject IHeroService heroService;
+
+<div class="container-search">
+    <label>Busca a tu heroe</label>
+    <input class="form-control form-search" @bind-value="searchText" />
+    <button @onclick="SearchHero" class="btn btn-primary">Buscar</button>
+</div>
+
+
+
+
+
+@code {
+    private string? searchText;
+    private List<Hero> heroesFound = new List<Hero>();
+    [Parameter] public EventCallback<List<Hero>> OnSearch { get; set; }
+
+    public async Task SearchHero() {
+
+        heroesFound =  heroService.SearchHero(searchText);
+        OnSearch.InvokeAsync(heroesFound);
+
+    }
+}
+

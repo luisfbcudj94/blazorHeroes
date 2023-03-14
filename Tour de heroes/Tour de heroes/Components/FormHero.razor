@@ -1,0 +1,48 @@
+﻿@using Tour_de_heroes.IServices;
+@inject IHeroService heroService;
+@using Tour_de_heroes.Models
+
+
+<h3>Agregar héroe</h3>
+
+<EditForm Model="@hero" OnValidSubmit="@HandleValidSubmit">
+    <DataAnnotationsValidator />
+
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <InputNumber id="id" @bind-Value="hero.Id" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <InputText id="nombre" @bind-Value="hero.Nombre" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="poderes">Poderes:</label>
+        <InputTextArea id="poderes" @bind-Value="hero.Poderes" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="urlFoto">URL de foto:</label>
+        <InputText id="urlFoto" @bind-Value="hero.UrlFoto" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</EditForm>
+
+@code {
+    private Hero hero = new Hero();
+
+    private void HandleValidSubmit()
+    {
+        heroService.addHero(new Hero {
+        Id = hero.Id,
+        Nombre = hero.Nombre,
+        Poderes = hero.Poderes,
+        UrlFoto = hero.UrlFoto
+        });
+
+        //hero = new Hero();
+    }
+}
